@@ -13,6 +13,9 @@ h = document.getElementById("first_dresser");
 i = document.getElementById("your guess");
 j = document.getElementById("click");
 k = document.getElementById("next");
+
+
+/* each of the nextImage functions have cycling images and there's 3 for each individual box inside the bog color box. the images will just switch from one to the other*/ 
 function nextImage(el){
 	if ( el.src.match("image/whitecolor.PNG")){
 		el.src = "image/pinkcolor.PNG";
@@ -77,7 +80,7 @@ function changeDresser(el) {
 	
 } 	
 	
-	
+	/* the swithImage function is when the images that are in the colorbox I have inside the bigger div all match up to the images that are in the correct order of the variables, then the image with the f variable will remove the invisible class and it would then appear on the screen */
  function switchImage(el){
 	if (a.src.match("image/pinkcolor") && b.src.match("image/bluecolor") && c.src.match("image/redcolor")){
 		f.classList.remove("invisible");
