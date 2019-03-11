@@ -12,7 +12,7 @@ g = document.getElementById("my_arrow");
 h = document.getElementById("first_dresser");
 i = document.getElementById("your guess");
 j = document.getElementById("click");
-
+k = document.getElementById("next");
 function nextImage(el){
 	if ( el.src.match("image/whitecolor.PNG")){
 		el.src = "image/pinkcolor.PNG";
@@ -64,7 +64,7 @@ function nextImage2(el){
 }
 
 
-
+/*this function is when the correct word is typed in the text box it would make the key appear that has the invisible class  */
 function changeDresser(el) {
 	x=document.getElementById("your guess").value;
 	if (x !== "HUNNY") { 
@@ -101,16 +101,20 @@ function changeDresser(el) {
 		
 	}
 }
-/* The function SwitchToDoor is when the key image is clicked it will change the image of the closed door to the open*/ 
+/* The function SwitchToDoor is when the key image is clicked it will change the image of the closed door to the open. I have the function switchToDoor on the key image inside my html so it knows that when the key is clicking it will do what's in this function.*/ 
 function switchToDoor(el){
 	
-	j.src="image/open_door.PNG";
-	
+	j.classList.add ("invisible") 
+	k.classList.remove ("invisible") 
 	
 	
 	
 }
 
-
+function nextRoom () { 
+	document.location.href = "https://dannyramirez1.github.io/phaseeight/homepage.html";
+} 
  
-
+/*
+	j.src="image/open_door.PNG";
+	*/
