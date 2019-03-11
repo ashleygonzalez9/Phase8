@@ -1,0 +1,79 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Escape</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+		<div class="big-row red ">
+			<div class="thirdbox yellow center-content">
+					<font color="white" font size="4px">
+					
+					<center>What Is This? <br></center></font>
+					<input  id="your guess"><br>
+						
+				
+				</div> 
+				
+				<img src="image/arrow2.PNG" class="center-content" id="my_arrow" onclick="changeDresser(this)" height="200px"/>
+			<div class="thirdbox2 blue center-content">
+				<font color="white" font size="4px"><center>Find The Key </center></font>
+				<br>
+					<img src="image/closed_door.PNG" height="300px" id="click" />
+					
+			</div>
+			<div class="thirdbox3 orange center-content" id="picture">
+			<font color="white" font size="4px"><center>Check With Pooh <br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				</center></font>
+				
+				<div class="colorbox pointer">
+					<div class="firstcolor">
+					<img src="image/whitecolor.PNG" class="restrict-img-size grow " id="first" onclick="nextImage(this)" height="700px"/>
+					</div>
+					
+					<div class="secondcolor">
+					<img src="image/whitecolor.PNG" class="restrict-img-size grow " id="second" onclick="nextImage2(this)" height="700px"/>
+					</div>
+					
+					<div class="thirdcolor" class="center-content">
+					<img src="image/whitecolor.PNG" class="restrict-img-size grow" id="third" onclick="nextImage3(this)" height="700px"/>
+					</div>
+				</div>
+				<br>
+					<img src="image/scrambledwords.PNG" class="invisible" id="show"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="big-row blue">
+			<div class="thirdbox4 pink center-content">
+					<img src="image/dresser3.png" height="700px" width="900px" id="first_dresser"/>
+			</div>
+			<div class="thirdbox5 red center-content">
+					<img src="image/mat2.png" class="restrict-img-size" />
+			</div>
+			<div class="thirdbox6 green center-content">
+				
+				<img src="image/pooh_sitting2.png" class="button restrict-img-size pointer" id="switch" onclick="switchImage(this)"/>
+					<img src="image/key.png" class="invisible pointer" id="key" onclick="switchToDoor(this)"/>
+			</div>
+		</div>
+			
+			
+	
+			
+			<script src="script.js"></script>
+	</body>
+</html>
