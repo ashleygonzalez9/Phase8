@@ -111,7 +111,7 @@ function switchToDoor(el){
 	
 }
 
-function nextRoom () { 
+function nextRoom (el) { 
 	document.location.href = "https://dannyramirez1.github.io/phaseeight/homepage.html";
 } 
  
