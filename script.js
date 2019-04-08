@@ -13,6 +13,9 @@ h = document.getElementById("first_dresser");
 i = document.getElementById("your guess");
 j = document.getElementById("click");
 k = document.getElementById("next");
+l = document.getElementById("switch");
+m = document.getElementById("words");
+
 
 
 /* each of the nextImage functions have cycling images and there's 3 for each individual box inside the bog color box. the images will just switch from one to the other*/ 
@@ -96,6 +99,9 @@ function changeDresser(el) {
  function switchImage(el){
 	if (a.src.match("image/pinkcolor") && b.src.match("image/bluecolor") && c.src.match("image/redcolor")){
 		f.classList.remove("invisible");
+		g.classList.remove("invisible");
+		m.classList.remove("invisible");
+		i.classList.remove("invisible");
 		console.log("Pooh!");
 		 
 
@@ -113,6 +119,16 @@ function switchToDoor(el){
 	
 	
 }
+
+function appearText(el){
+	
+	l.classList.add ("invisible") 
+	k.classList.remove ("invisible") 
+	
+	
+	
+}
+
 
 function nextRoom (el) { 
 	document.location.href = "https://dannyramirez1.github.io/phaseeight/homepage.html";
